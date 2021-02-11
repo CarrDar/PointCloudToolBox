@@ -10,10 +10,10 @@ B_=mean(B);
 
 for n=0:1:85
     idx=Incidence_deg==n;
-    AAAAAA=Corr_I_Tot(idx);
-    idx_nan=isnan(AAAAAA);
-    AAAAAA(idx_nan)=0;
-    mean_dist(1,1+n)=mean(AAAAAA)/B_;
+    AA=Corr_I_Tot(idx);
+    idx_nan=isnan(AA);
+    AA(idx_nan)=0;
+    mean_dist(1,1+n)=mean(AA)/B_;
 
 end
 
