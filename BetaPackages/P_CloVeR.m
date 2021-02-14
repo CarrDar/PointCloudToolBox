@@ -1,6 +1,6 @@
  %AUTHOR  : Dario Carrea (at unil dot ch)
  %VERSION : 0.1
- %STATUS  : OK
+ %STATUS  : Beta
  %DATE    : 14 fevrier 2021
 
 
