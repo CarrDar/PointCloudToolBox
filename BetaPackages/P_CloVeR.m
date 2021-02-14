@@ -1,10 +1,16 @@
+ %AUTHOR  : Dario Carrea (at unil dot ch)
+ %VERSION : 0.1
+ %STATUS  : OK
+ %DATE    : 14 fevrier 2021
+
+
 close all;
 clc;
-cd 'D:\Dario_unil\Thèse\Modelisation\MATLAB';
+cd % Add your directories link here;
 
 pc=ImportPointCloudFromASCII('2015-06-11_Up_10cm.txt','Test',{'P','Intensities'});
 pc.ComputeKDTree;
-pc.TLSPos=[0 0 0]';
+pc.TLSPos=[0 0 0]'; % add TLS position here
 tic; pc.ComputeOptimalNormals; toc
 pc.NormalsOutTopo;
 [N3, ~] = knnsearch(pc.KDTree,(pc.P)', 'k', 50);
